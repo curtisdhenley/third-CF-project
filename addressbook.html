@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Forms Practice</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/address.css">
+</head>
+<body>
+    <header>
+           <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+               <div class="container-fluid">
+                   <a class="navbar-brand" href="#">BS Forms</a>
+                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                       data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                       aria-label="Toggle navigation">
+                       <span class="navbar-toggler-icon"></span>
+                   </button>
+                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                           <li class="nav-item">
+                               <a class="nav-link" href="/index.html">Home</a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link" href="/contact.html">Contact Me</a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link active" aria-current="page" href="/addressbook.html">Address Book</a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link" href="/invoice.html">Invoice</a>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+           </nav>
+    </header>
+
+    <main class="content container">
+        <h1>My Address Book</h1>
+        <div class="bg-light shadow-lg p-3 border border-2">
+            <form action="#">
+                <div class="row g-2 p-2">
+                    <div class="col-12 col-md-4">
+                        <img src="/img/GirlOne@4x.png" alt="Avatar" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label" for="firstname">First Name</label>
+                                <input class="form-control" type="text" placeholder="First Name" id="firstname" aria-label="First Name" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label class="form-label" for="lastname">Last Name</label>
+                                <input class="form-control" type="text" placeholder="Last Name" id="lastname" aria-label="Last Name" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label class="form-label" for="email">Email</label>
+                                <input class="form-control" type="email" placeholder="Email" id="email" aria-label="Email" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label class="form-label" for="phone">Phone</label>
+                                <input class="form-control" type="tel" placeholder="Phone" id="phone" aria-label="Phone" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label" for="address">Address</label>
+                                <input class="form-control" type="text" placeholder="1234 Main St" id="address" aria-label="Address" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label" for="address2">Address 2</label>
+                                <input class="form-control" type="text" placeholder="Apartment, studio, or floor" id="address2" aria-label="Address">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label class="form-label" for="city">City</label>
+                                <input class="form-control" type="text" id="City" aria-label="city" required>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <label for="state" class="form-label">State</label>
+                                <select name="" class="form-control" id="state">
+                                    <option selected>Choose...</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="DC">District Of Columbia</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-2">
+                                <label class="form-label" for="zip">Zip</label>
+                                <input class="form-control" type="text" id="Zip" aria-label="zip" required>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="family">
+                                    <label for="label" form-check-label>Family</label>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex justify-content-end">
+                                <button type="submit" class="btn btn-primary btn-lg">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light py-3 container-fluid mt-5r">
+        <div class="row row-cols-1 gy-2 row-cols-md-3">
+            <div class="col text-center text-md-start">Built by Astra Cohort</div>
+            <div class="col text-center">Bootstrap Forms</div>
+            <div class="col text-center text-md-end">
+                <a href="mailto:henleydcurtis@gmail.com" class="text-decoration-none text-warning">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

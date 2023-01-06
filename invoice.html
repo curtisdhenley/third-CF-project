@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Forms Practice</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/invoice.css">
+</head>
+
+<body>
+    <header class="d-print-none">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">BS Forms</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">Contact Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/addressbook.html">Address Book</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/invoice.html">Invoice</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content">
+        <div class="container border border-2 px-5">
+            <div class="row border-bottom py-3">
+                <div class="col-6 text-start">
+                    <img src="/img/IdeaFoundryLogo.svg" alt="Company Logo" class="img-fluid">
+                </div>
+                <div class="col-6 d-flex align-items-center justify-content-end">
+                    <h2>Invoice</h2>
+                </div>
+            </div>
+            <div class="row border-bottom pt-3">
+                <div class="col-6 text-start">
+                    <p>Date: 05/12/2019</p>
+                </div>
+                <div class="col-6 text-end">
+                    <p><strong>Invoice No:</strong> 19005</p>
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-6 text-start">
+                    <strong>Invoiced To:</strong>
+                    <address>
+                        Mark Davis <br>
+                        3333 Al Davis Way <br>
+                        Las Vegas, NV, 89118
+                    </address>
+                </div>
+                <div class="col-6 text-end">
+                    <p>
+                        <strong>Pay To:</strong> <br>
+                        Idea Foundry, Inc. <br>
+                        2705 N Enterprise St <br>
+                        Kernersville, NC, 27284 <br>
+                        contact@ideafoundryinc.com
+                    </p>
+                </div>
+                <table class="table table-bordered border-dark-subtle">
+                    <tr class="table-header bg-dark text-light">
+                        <th class="col-6">Services</th>
+                        <th>Description</th>
+                        <th>Rate</th>
+                        <th>QTY</th>
+                        <th>Amount</th>
+                    </tr>
+                    <tr>
+                        <td>Design</td>
+                        <td>Website Design</td>
+                        <td>$60.00</td>
+                        <td>10</td>
+                        <td>$600.00</td>
+                    </tr>
+                    <tr class="bg-secondary text-light">
+                        <td>Development</td>
+                        <td>Website Development</td>
+                        <td>$150.00</td>
+                        <td>10</td>
+                        <td>$1500.00</td>
+                    </tr>
+                    <tr>
+                        <td>Deployment</td>
+                        <td>Deployment and Hosting</td>
+                        <td>$450.00</td>
+                        <td>1</td>
+                        <td>$450.00</td>
+                    </tr>
+                    <tfoot class="text-end">
+                        <tr>
+                            <td colspan="4">
+                                <strong>Sub Total:</strong>
+                            </td>
+                            <td>$2550.00</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <strong>Tax:</strong>
+                            </td>
+                            <td>$0.00</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <strong>Total:</strong>
+                            </td>
+                            <td>$2550.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <p class="text-center"><strong>NOTE :</strong> This is computer generated receipt and does not require physical signature.</p>
+                <div class="col-12 d-flex justify-content-center py-3">
+                    <button type="submit" class="btn btn-primary btn-lg d-print-none" onclick="window.print()">Print</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light py-3 container-fluid mt-5 d-print-none">
+        <div class="row row-cols-1 gy-2 row-cols-md-3">
+            <div class="col text-center text-md-start">Built by Astra Cohort</div>
+            <div class="col text-center">Bootstrap Forms</div>
+            <div class="col text-center text-md-end">
+                <a href="mailto:henleydcurtis@gmail.com" class="text-decoration-none text-warning">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
